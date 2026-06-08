@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Plus, Trash2 } from "lucide-react";
+import { Seo } from "../components/Seo";
 
 interface Product {
   id: string;
@@ -28,6 +29,7 @@ export const ProductComparison: React.FC = () => {
 
   return (
     <div className="mx-auto max-w-4xl space-y-8 animate-in fade-in duration-500">
+      <Seo title="Product Comparison" description="Compare the actual cost per pound of nutrient across different bulk fertilizer sources." url="/compare" />
       <header className="border-b border-slate-200 pb-6">
         <h1 className="text-3xl font-bold tracking-tight text-slate-900">Fertilizer Product Compare</h1>
         <p className="mt-2 text-slate-500">Compare the actual cost per pound of nutrient across different bulk fertilizer sources.</p>

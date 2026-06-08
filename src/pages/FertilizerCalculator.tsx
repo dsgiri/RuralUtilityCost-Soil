@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Seo } from "../components/Seo";
 
 export const FertilizerCalculator: React.FC = () => {
   const [nutrientNeeded, setNutrientNeeded] = useState<string>("");
@@ -25,6 +26,7 @@ export const FertilizerCalculator: React.FC = () => {
 
   return (
     <div className="mx-auto max-w-3xl space-y-8 animate-in fade-in duration-500">
+      <Seo title="Fertilizer Calculator" description="Calculate actual fertilizer product required to meet a nutrient recommendation." url="/recommend" />
       <header className="border-b border-slate-200 pb-6">
         <h1 className="text-3xl font-bold tracking-tight text-slate-900">NPK Fertilizer Calculator</h1>
         <p className="mt-2 text-slate-500">Calculate actual fertilizer product required to meet a nutrient recommendation.</p>

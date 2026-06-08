@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Seo } from "../components/Seo";
 
 // Standard approximate removal rates (lbs per unit of yield)
 const CROP_REMOVAL_DATA = [
@@ -23,6 +24,7 @@ export const NutrientRemoval: React.FC = () => {
 
   return (
     <div className="mx-auto max-w-3xl space-y-8 animate-in fade-in duration-500">
+      <Seo title="Nutrient Removal" description="Estimate how much N, P, and K are removed from the field by harvested crops." url="/removal" />
       <header className="border-b border-slate-200 pb-6">
         <h1 className="text-3xl font-bold tracking-tight text-slate-900">Nutrient Removal Calculator</h1>
         <p className="mt-2 text-slate-500">Estimate how much N, P, and K are removed from the field by harvested crops.</p>

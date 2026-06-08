@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Seo } from "../components/Seo";
 
 export const LimePlanner: React.FC = () => {
   const [currentpH, setCurrentpH] = useState<string>("");
@@ -38,6 +39,7 @@ export const LimePlanner: React.FC = () => {
 
   return (
     <div className="mx-auto max-w-3xl space-y-8 animate-in fade-in duration-500">
+      <Seo title="Lime Requirement Planner" description="Estimate lime needs based on soil pH, buffer pH, and neutralizing value." url="/lime" />
       <header className="border-b border-slate-200 pb-6">
         <h1 className="text-3xl font-bold tracking-tight text-slate-900">Lime Requirement Estimator</h1>
         <p className="mt-2 text-slate-500">Estimate lime needs based on soil pH, buffer pH, and neutralizing value.</p>

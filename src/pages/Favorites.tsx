@@ -3,6 +3,7 @@ import { useFavorites } from "../context/FavoritesContext";
 import { TOOLS } from "../data/tools";
 import { ToolCard } from "../components/ToolCard";
 import { Link } from "react-router-dom";
+import { Seo } from "../components/Seo";
 
 export const Favorites: React.FC = () => {
   const { favorites } = useFavorites();
@@ -11,6 +12,7 @@ export const Favorites: React.FC = () => {
 
   return (
     <div className="space-y-8 animate-in fade-in duration-500">
+      <Seo title="Favorites" description="Quick access to your most frequently used soil and nutrient calculators." url="/favorites" />
       <header className="border-b border-slate-200 pb-6">
         <h1 className="text-3xl font-bold tracking-tight text-slate-900">Your Saved Tools</h1>
         <p className="mt-2 text-slate-500">Quick access to your most frequently used soil and nutrient calculators.</p>

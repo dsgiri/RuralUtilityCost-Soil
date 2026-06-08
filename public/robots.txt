@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://soil.ruralutilitycost.com/sitemap.xml

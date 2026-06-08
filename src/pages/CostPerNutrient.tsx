@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Seo } from "../components/Seo";
 
 export const CostPerNutrient: React.FC = () => {
   const [pricePerTon, setPricePerTon] = useState<string>("");
@@ -21,6 +22,7 @@ export const CostPerNutrient: React.FC = () => {
 
   return (
     <div className="mx-auto max-w-3xl space-y-8 animate-in fade-in duration-500">
+      <Seo title="Cost Per Nutrient" description="Calculate the actual cost of a specific nutrient (N, P, or K) based on the bulk fertilizer price." url="/cost" />
       <header className="border-b border-slate-200 pb-6">
         <h1 className="text-3xl font-bold tracking-tight text-slate-900">Cost Per Pound of Nutrient</h1>
         <p className="mt-2 text-slate-500">Calculate the actual cost of a specific nutrient (N, P, or K) based on the bulk fertilizer price.</p>

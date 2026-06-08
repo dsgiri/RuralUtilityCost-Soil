@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { TOOLS, CATEGORIES } from "../data/tools";
 import { ToolCard } from "../components/ToolCard";
 import { cn } from "../lib/utils";
+import { Seo } from "../components/Seo";
 
 export const Home: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
@@ -12,6 +13,11 @@ export const Home: React.FC = () => {
 
   return (
     <div className="space-y-8 animate-in fade-in duration-500">
+      <Seo 
+        title="Dashboard" 
+        description="Nutrient management and soil test interpretation tools for rural and agricultural applications."
+        url="/"
+      />
       {/* Dashboard Hero */}
       <div className="flex flex-col sm:flex-row sm:items-end justify-between border-b border-slate-200 pb-6 gap-4">
         <div>

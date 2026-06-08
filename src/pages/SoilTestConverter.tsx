@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Seo } from "../components/Seo";
 
 export const SoilTestConverter: React.FC = () => {
   const [ppmValue, setPpmValue] = useState<string>("");
@@ -22,6 +23,7 @@ export const SoilTestConverter: React.FC = () => {
 
   return (
     <div className="mx-auto max-w-3xl space-y-8 animate-in fade-in duration-500">
+      <Seo title="Soil Test Converter" description="Convert lab report parts per million (ppm) to pounds per acre." url="/test" />
       <header className="flex flex-col sm:flex-row sm:items-end justify-between border-b border-slate-200 pb-6 gap-4">
         <div>
           <h1 className="text-3xl font-bold tracking-tight text-slate-900">Soil Test Interpreter</h1>

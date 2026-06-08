@@ -17,11 +17,14 @@ import { Favorites } from "./pages/Favorites";
 import { About } from "./pages/About";
 import { Legal } from "./pages/Legal";
 import { Contact, License } from "./pages/MiscPages";
+import { NotFound } from "./pages/NotFound";
+import { RouteChangeTracker } from "./components/RouteChangeTracker";
 
 export default function App() {
   return (
     <FavoritesProvider>
       <Router>
+        <RouteChangeTracker />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -36,6 +39,7 @@ export default function App() {
             <Route path="legal" element={<Legal />} />
             <Route path="contact" element={<Contact />} />
             <Route path="license" element={<License />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </Router>
